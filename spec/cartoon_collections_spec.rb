@@ -1,3 +1,5 @@
+
+
 require "spec_helper"
 
 describe "./cartoon_collections.rb" do
@@ -68,3 +70,38 @@ end
 #   end
 # end
 
+def square_array(array)
+  new_array = []
+  array.each do |element|
+    new_array << element * element
+  end
+  puts new_array
+end
+square_array([1,2,3,4,5])
+
+
+
+def square_array1(array1)
+  new_array1 = []
+  array1.each do |element|
+    new_array1 << element * element
+  end
+  puts new_array1
+end
+square_array1([10, 12])
+
+
+
+def summon_captain_planet(small_calls) 
+  small_calls.each do |element|
+    element.capitalize + "!"
+  end
+end
+summon_captain_planet(["earth", "wind", "fire", "water", "heart"])
+
+
+
+def long_planeteer_calls(short_calls)
+  puts short_calls.select {|element| element.count > 4}
+end
+long_planeteer_calls(["earth", "wind", "fire", "water", "heart"])
